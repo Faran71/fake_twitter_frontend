@@ -1,0 +1,70 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+.left {
+    width: 20vw;
+    padding-left: 0;
+    font-size: x-large;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .left p {
+    margin-top: 10vh;
+    margin-left: 7vw;
+} */
+
+/* .left button {
+    margin-left: 8vw;
+    text-align: center;
+} */
+
+.profile_img {
+    height: 30vh;
+    width: 15vw;
+    padding-top: 10vh;
+    /* padding-left: 2.5vw; */
+}
+
+.all-tweets {
+    height: 90vh;
+    overflow-y: scroll;
+    /* overflow-x: auto; */
+    width: 50vw;
+    /* background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='495' height='59.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='9.7' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); */
+}
+
+.middle {
+    width: 50vw;
+}
+.middle h3 {
+    height: 5vh;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-around;
+}
+
+.form input {
+    width: 20vw;
+    margin-left: 5vw;
+    height: 30vh;
+    
+}
+
+.form button {
+    width: 10vw;
+    margin-left: 10vw;
+}
+
+
+
