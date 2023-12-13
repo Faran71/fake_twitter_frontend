@@ -18,7 +18,7 @@ const MainPage = ({currentUser, allTweets, setAllTweets, setCurrentUser}) => {
     })
 
     const postTweet = async (newTweet) => {
-        const newResponse = await fetch(`http://localhost:8080/tweets/postTweet/${currentUser.id}`,{
+        const newResponse = await fetch(`https://spring-render-85i2.onrender.com/tweets/postTweet/${currentUser.id}`,{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body:JSON.stringify(newTweet)

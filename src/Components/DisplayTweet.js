@@ -8,7 +8,7 @@ const DisplayTweet = ({tweet, currentUser}) => {
 
     const [comments, setComments] = useState([]);
     const fetchComments = async () => {
-        const response = await fetch(`http://localhost:8080/comments/tweet/${tweet.id}`);
+        const response = await fetch(`https://spring-render-85i2.onrender.com/comments/tweet/${tweet.id}`);
         const data = await response.json()
         setComments(data);
     }
@@ -38,7 +38,7 @@ const DisplayTweet = ({tweet, currentUser}) => {
     const [redLike, setRedLike] = useState(false);
 
     const likeTweet = async (tweet) => {
-        const newResponse = await fetch(`http://localhost:8080/tweets/likeTweet/${tweet.id}/${currentUser.id}`,{
+        const newResponse = await fetch(`https://spring-render-85i2.onrender.com/tweets/likeTweet/${tweet.id}/${currentUser.id}`,{
             method: "POST",
             headers: {"Content-Type": "application/json"},
         })
@@ -93,7 +93,7 @@ const DisplayTweet = ({tweet, currentUser}) => {
 
     const [newComment, setNewComment] = useState("");
     const writeComment = async (newComment) => {
-        const newResponse = await fetch(`http://localhost:8080/comments/writeComment/${currentUser.id}/${tweet.id}`,{
+        const newResponse = await fetch(`https://spring-render-85i2.onrender.com/comments/writeComment/${currentUser.id}/${tweet.id}`,{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body:JSON.stringify(newComment)

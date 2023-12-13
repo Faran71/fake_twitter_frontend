@@ -11,13 +11,13 @@ const ControlPage = () => {
     const [allTweets, setAllTweets] = useState([]);
 
     const fetchUsers = async () => {
-        const response = await fetch("http://localhost:8080/users");
+        const response = await fetch("https://spring-render-85i2.onrender.com/users");
         const data = await response.json()
         setAllUsers(data);
     }
 
     const fetchTweets = async () => {
-        const response = await fetch("http://localhost:8080/tweets");
+        const response = await fetch("https://spring-render-85i2.onrender.com/tweets");
         const data = await response.json()
         setAllTweets(data);
     }

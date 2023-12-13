@@ -38,7 +38,7 @@ const LogInPage = ({setCurrentUser, currentUser, allUsers}) => {
             email: registerEmail,
             password: registerPassword
         }
-        const newResponse = await fetch(`http://localhost:8080/users`,{
+        const newResponse = await fetch(`https://spring-render-85i2.onrender.com/users`,{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body:JSON.stringify(temp)
@@ -73,7 +73,7 @@ const LogInPage = ({setCurrentUser, currentUser, allUsers}) => {
             email: logInEmail,
             password: logInPassword
         }
-        const newResponse = await fetch(`http://localhost:8080/users/authenticate`,{
+        const newResponse = await fetch(`https://spring-render-85i2.onrender.com/users/authenticate`,{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body:JSON.stringify(temp)
